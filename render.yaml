@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: emotion-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python backend/facerecog.py
+    runtime: python
+    pythonVersion: 3.10
